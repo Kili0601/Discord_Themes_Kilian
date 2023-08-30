@@ -16,7 +16,7 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #0088ff; /* main accent color (hex, rgb or hsl) [default: #0088ff] */
+  --main-color: #008cff; /* main accent color (hex, rgb or hsl) [default: #0088ff] */
   --hover-color: #1648FF; /* hover accent color (hex, rgb or hsl) [default: #1648FF] */
   --success-color: #0000FF; /* success accent color (hex, rgb or hsl) [default: #0000FF] */
   --danger-color: #FF0000; /* danger accent color (hex, rgb or hsl) [default: #FF0000] */
@@ -30,11 +30,11 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
   /* GENERAL */
-  --main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
-  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-  --text-normal: rgb(220, 221, 222); /* color of default discord text */
+  --main-font: gg sans; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  --text-normal: rgb(255, 255, 255); /* color of default discord text */
   --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-  --channels-width: 259px; /* channel list width (240px for Discord default) [default: 259px] */
+  --channels-width: 260px; /* channel list width (240px for Discord default) [default: 259px] */
   --members-width: 240px; /* member list width [default: 240px] */
 
   /* APP BACKGROUND */
@@ -59,9 +59,9 @@
 
   /* CHANNEL COLORS */
   --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+  --channel-color: rgb(0, 26, 255); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+  --channel-text-selected: 	#001AFF; /* Selected channel text color, CV default is #fff */
+  --muted-color: rgba(0, 26, 255, 0.5); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
   /* MODAL BACKDROP */
   --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
@@ -106,4 +106,27 @@
   --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
   --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
   --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+
+  /* Custom */
+  --HSL-server-icon-size: 45px;
+  --HSL-server-spacing: 10px;
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 0px;
+  --rs-medium-width: 0px;
+  --rs-large-width: 0px;
+  --rs-avatar-shape: 0%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
+  --columns: 3;
+  --guildgap: 3;
+  --aligndms: 0;
 }
