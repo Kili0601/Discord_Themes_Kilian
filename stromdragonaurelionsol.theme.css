@@ -1,8 +1,8 @@
 /**
- * @name Storm Dragon Aurelion Sol
- * @author ClearVision Team and Kili060108
+ * @name ClearVision
+ * @author ClearVision Team
  * @version 6.3.0
- * @description Highly customizable theme for Vencord and Better Discord.
+ * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.gitlab.io
  * @invite dHaSxn3
@@ -16,11 +16,11 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-  --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-  --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
-  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-  --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+  --main-color: #0088ff; /* main accent color (hex, rgb or hsl) [default: #0088ff] */
+  --hover-color: #1648FF; /* hover accent color (hex, rgb or hsl) [default: #1648FF] */
+  --success-color: #0000FF; /* success accent color (hex, rgb or hsl) [default: #0000FF] */
+  --danger-color: #FF0000; /* danger accent color (hex, rgb or hsl) [default: #FF0000] */
+  --url-color: #4E74FF; /*The color of url links [default: #4E74FF]*/
 
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -34,27 +34,26 @@
   --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
   --text-normal: rgb(220, 221, 222); /* color of default discord text */
   --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-  --channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+  --channels-width: 259px; /* channel list width (240px for Discord default) [default: 259px] */
   --members-width: 240px; /* member list width [default: 240px] */
 
   /* APP BACKGROUND */
-  --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-  --background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+  --background-shading: 75%; /* app background shading (0 for complete smoothness) [default: 75%] */
+  --background-overlay: rgba(0, 0, 10, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 10, 0.6)] */
+  --background-image: url('https://raw.githubusercontent.com/Kili0601/Discord_Themes_Kilian/main/Images/Aurelion%20Sol%20Background.png?token=GHSAT0AAAAAACELJT3BXBBR4X2EAZVWL4UOZFJUP2A'); /* app background image (link must be HTTPS) [default: url('https://raw.githubusercontent.com/Kili0601/Discord_Themes_Kilian/main/Images/Aurelion%20Sol%20Background.png?token=GHSAT0AAAAAACELJT3BXBBR4X2EAZVWL4UOZFJUP2A')]*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
-  --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+  --background-repeat: repeat; /* app background repeat [default: repeat] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
   --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
   --background-contrast: 100%; /* app background contrast [default: 100%] */
   --background-saturation: 100%; /* app background saturation [default: 100%] */
   --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
   --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
-  --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-  --background-blur: 0px; /* app background blur [default: 0px] */
+  --background-blur: 3px; /* app background blur [default: 3px] */
 
   /* HOME BUTTON ICON */
-  --home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+  --home-icon: url('https://raw.githubusercontent.com/Kili0601/Discord_Themes_Kilian/main/Images/asol%20head%20512x512_.png?token=GHSAT0AAAAAACELJT3AG2M6OC42OJ7ALYYSZFJTZSQ'); /* home button icon (link must be HTTPS) [default: url('https://raw.githubusercontent.com/Kili0601/Discord_Themes_Kilian/main/Images/asol%20head%20512x512_.png?token=GHSAT0AAAAAACELJT3AG2M6OC42OJ7ALYYSZFJTZSQ')]*/
   --home-position: center; /* home button icon position [default: center] */
   --home-size: 40px; /* home button icon size [default: 40px] */
 
@@ -107,9 +106,4 @@
   --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
   --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
   --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
-
-  /* THEME BD COLORS */
-  --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-  --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
-  --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
